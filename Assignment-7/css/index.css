@@ -1,0 +1,276 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 80rem;
+  margin: 30px auto;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*  Navbar start  */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 300px;
+}
+
+.nav-item {
+  margin: 0 30px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 200;
+}
+
+.nav-item.active-item {
+  color: #fe5e35;
+  font-weight: 700;
+}
+
+.menu-icon {
+  display: none;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Intro Section */
+.intro-section {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.intro-section .left-section {
+  padding-top: 50px;
+  width: 100%;
+}
+.left-section h3 {
+  font-size: 36px;
+}
+
+.left-section h3 img {
+  width: 8%;
+}
+
+.left-section h1 {
+  font-family: "Fredoka One", sans-serif;
+  font-size: 55px;
+  padding-top: 10px;
+  font-weight: 500;
+}
+
+.sub-headlines {
+  padding: 30px 50px;
+}
+
+.sub-headline {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.sub-headline img {
+  margin-right: 20px;
+  background-color: #fe5e35;
+  border-radius: 50px;
+  height: 30px;
+  padding: 5px;
+}
+
+.left-section .text {
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.left-section .action-btns {
+  margin-top: 46px;
+}
+
+.left-section .action-btn {
+  background-color: #fe5e35;
+  color: #ffffff;
+  border-radius: 30px;
+  border: none;
+  padding: 15px 30px;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 120px;
+}
+
+.headphone-div {
+  position: relative;
+}
+
+.discount {
+  position: absolute;
+  left: -5%;
+  bottom: 10%;
+  height: 130px;
+}
+
+.discount-content {
+  position: absolute;
+  left: 1%;
+  bottom: 19%;
+  font-family: "Fredoka One", sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+
+.discount-content h4 {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.discount-content h1 {
+  font-size: 35px;
+  font-weight: normal;
+}
+
+.headphone-div img:nth-child(3) {
+  height: 420px;
+}
+
+.dots {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  padding: 10px 0;
+}
+
+.dots .dot {
+  height: 26px;
+  width: 26px;
+  border-radius: 13px;
+}
+
+.dot.yellow-dot {
+  background-color: #f7cd2e;
+}
+
+.dot.tomato-dot {
+  background-color: #fe5e35;
+}
+
+.dot.black-dot {
+  background-color: #000000;
+}
+
+.right-section .action-btn {
+  background-color: #fe5e35;
+  color: #ffffff;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 25px;
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    padding: 2% 3%;
+  }
+  img[alt="logo"] {
+    height: 40px;
+  }
+  .nav-items {
+    margin-left: 70px;
+  }
+  .nav-item {
+    margin: 0 20px;
+    font-size: 18px;
+  }
+  img[alt="actions"] {
+    margin-left: 20px;
+  }
+  .intro-section {
+    padding-bottom: 0;
+  }
+  .sub-headlines {
+    padding: 20px 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .nav-items {
+    display: none;
+  }
+  .menu-icon {
+    display: inline-block;
+  }
+  .intro-section {
+    flex-direction: column-reverse;
+  }
+  img[alt="actions"] {
+    display: none;
+  }
+  .right-section {
+    margin-left: 150px;
+  }
+  .headphone-div img:nth-child(3) {
+    height: 380px;
+  }
+  .dots .dot {
+    height: 22px;
+    width: 22px;
+    border-radius: 11px;
+  }
+  .right-section .action-btn {
+    padding: 8px 14px;
+    font-size: 16px;
+  }
+  .left-section .action-btns {
+    margin-top: 30px;
+  }
+  .left-section .action-btn {
+    padding: 8px 14px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .headphone-div img:nth-child(3) {
+    height: 320px;
+  }
+  .discount {
+    left: -5%;
+    height: 100px;
+  }
+  .discount-content {
+    position: absolute;
+    left: 1%;
+  }
+  .discount-content h4 {
+    font-size: 10px;
+  }
+  .discount-content h1 {
+    font-size: 30px;
+  }
+  .dots {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+ }
